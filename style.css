@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  color: #00bcd4;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Home */
+.home {
+  height: 100vh;
+  background: linear-gradient(to right, #00bcd4, #008ba3);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
+}
+
+.home h1 span {
+  color: #111;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.light {
+  background: #f3f3f3;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Skills & Projects grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.box {
+  background: #00bcd4;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card {
+  background: #00bcd4;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+/* Contact */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #00bcd4;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
